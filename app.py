@@ -16,7 +16,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.config import (ASSET_LABELS, BENCHMARK, DBMF_INCEPTION,
+from config import (ASSET_LABELS, BENCHMARK, DBMF_INCEPTION,
                         MANAGED_FUTURES_PROXY, PROVENANCE, STRESS_WINDOWS,
                         TICKERS)
 from src.data import load_prices, to_returns
