@@ -19,10 +19,10 @@ import streamlit as st
 from config import (ASSET_LABELS, BENCHMARK, DBMF_INCEPTION,
                         MANAGED_FUTURES_PROXY, PROVENANCE, STRESS_WINDOWS,
                         TICKERS)
-from src.data import load_prices, to_returns
-from src.metrics import (drawdown_series, max_drawdown, portfolio_returns,
+from data import load_prices, to_returns
+from metrics import (drawdown_series, max_drawdown, portfolio_returns,
                          summary)
-from src.optimizer import equal_weight, optimise, slice_windows
+from optimizer import equal_weight, optimise, slice_windows
 
 st.set_page_config(page_title="Crisis Tail-Risk & Volatility Shield",
                    page_icon="🛡️", layout="wide")
